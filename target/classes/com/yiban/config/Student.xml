@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0 //EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yiban.Mapper.StudentMapper">
+    <!--com.yiban.Mapper.StudentMapper-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"/>
+    <resultMap id="student" type="com.yiban.entity.Student">
+        <id column="stu_id" property="stu_id"/>
+        <result column="exNum" property="exNum"/>
+        <result column="name" property="name"/>
+        <result column="department" property="department"/>
+        <result column="major" property="major"/>
+    </resultMap>
+    <!--查询学生所有信息-->
+    <select id="select" resultMap="student">
+        SELECT a.name,a.department,a.major,a.stu_id   FROM student a WHERE a.exNum = #{id} AND a.name=#{name}
+    </select>
+
+
+</mapper>

@@ -19,7 +19,7 @@ $(document).ready(function(){
 			return;
 		}
 		$.ajax({
-			url:'/YiBan/formSubmit',
+			url:'/zqu_yiban/formSubmit',
 			type: 'POST',
 			data: {
 				name: name,

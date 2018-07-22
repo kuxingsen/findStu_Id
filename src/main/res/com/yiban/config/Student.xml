@@ -15,7 +15,7 @@
     </resultMap>
     <!--查询学生所有信息-->
     <select id="select" resultMap="student">
-        SELECT a.name,a.department,a.major,a.stu_id   FROM student a WHERE a.exNum = #{id} AND a.name=#{name}
+        SELECT a.name,a.department,a.major,a.stu_id FROM student a WHERE a.exNum = #{id} AND a.name=#{name}
     </select>
 
 

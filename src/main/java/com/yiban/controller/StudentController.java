@@ -23,15 +23,14 @@ import javax.servlet.http.HttpSession;
  * @date 2018/7/17 22:52
  */
 @Controller
-@RequestMapping(value = "/YiBan")
+@RequestMapping(value = "/zqu_yiban")
 public class StudentController {
     @Autowired
     private findStu_info findStu_info;
 
-    @RequestMapping(value = "/findStuId")
-    public ModelAndView toGetIndex(ModelAndView modelAndView){
-        modelAndView.setViewName("/index");
-        return modelAndView;
+    @RequestMapping(value = "/index")
+    public String toGetIndex(){
+        return "index";
     }
 
     @RequestMapping(value="/formSubmit",method=RequestMethod.POST)

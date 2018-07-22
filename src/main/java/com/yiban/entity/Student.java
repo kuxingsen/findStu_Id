@@ -10,6 +10,7 @@ import java.io.Serializable;
  * @date 2018/7/17 22:29
  */
 public class Student implements Serializable {
+
     //    学生id
     private String stu_id;
     //    学生高考准考证号

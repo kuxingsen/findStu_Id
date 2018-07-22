@@ -19,7 +19,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <spring.version>4.2.6.RELEASE</spring.version>
     </properties>
-    
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
         <dependency>
